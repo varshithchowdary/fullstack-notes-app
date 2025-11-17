@@ -1,8 +1,11 @@
+// lib/services/api_services.dart
+
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:notes_app/models/note.dart';
 
 class ApiService {
+  // change host if your backend runs on emulator/device
   static const String _baseUrl =
       "https://fullstack-notes-app-rf7s.onrender.com/api/notes";
 
