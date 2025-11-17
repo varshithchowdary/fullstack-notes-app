@@ -4,7 +4,8 @@ import '../models/note.dart';
 
 class ApiService {
   static const String baseUrl =
-      "http://10.0.2.2:8080/api/notes"; // for emulator
+      "https://fullstack-notes-app-rf7s.onrender.com/api/notes";
+  // for emulator
 
   static Future<List<Note>> fetchNotes() async {
     final response = await http.get(Uri.parse(baseUrl));
